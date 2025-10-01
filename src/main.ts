@@ -10,6 +10,5 @@ async function bootstrap() {
     allowedHeaders: ['Content-Type', 'Authorization'],
   });
   await app.listen(process.env.PORT ?? 9000);
-  console.log(`Frontend URL: ${process.env.FRONTEND_URL}`);
 }
 bootstrap();
