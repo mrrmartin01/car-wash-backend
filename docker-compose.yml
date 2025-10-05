@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: carwashdb
+    ports:
+      - "5435:5432"
+    networks:
+      - martin
+
+networks:
+  martin:
